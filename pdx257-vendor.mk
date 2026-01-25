@@ -1124,16 +1124,6 @@ PRODUCT_PACKAGES += \
     libmctfengine_skel \
     libsw2dlut_dsp_skel \
     sensors.ssc \
-    libbundleaidl \
-    libdownmixaidl \
-    libdynamicsprocessingaidl \
-    libloudnessenhanceraidl \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libreverbaidl \
-    libvisualizeraidl \
-    libvolumelistener \
     vendor.hardware.biometrics.fingerprintRbs-V1-ndk \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
