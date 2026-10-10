@@ -505,7 +505,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    android.hardware.bluetooth.audio-impl_prebuilt \
     btaudio_offload_if \
     com.qti.flash.lm3644 \
     com.qti.sensor.imx766_fab1_txd_main \
@@ -734,7 +733,6 @@ PRODUCT_PACKAGES += \
     libaudioserviceexampleimpl \
     libbatching \
     libbitmlenginev2 \
-    libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
