@@ -727,7 +727,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_raw \
     libarcsoft_superportrait \
     libarcsoft_video_hdr \
-    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_log_utils \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
