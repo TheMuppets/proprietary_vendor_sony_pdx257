@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx257/proprietary/vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_qrd_sku1.xml \
     vendor/sony/pdx257/proprietary/vendor/etc/audio/sku_parrot/resourcemanager_upd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_upd.xml \
     vendor/sony/pdx257/proprietary/vendor/etc/audio_app_white_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_app_white_list.xml \
+    vendor/sony/pdx257/proprietary/vendor/etc/bluetooth/aac_bitrate_levels.bin:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/aac_bitrate_levels.bin \
     vendor/sony/pdx257/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/sony/pdx257/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/sony/pdx257/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
@@ -302,8 +303,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx257/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/sony/pdx257/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/sony/pdx257/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/sony/pdx257/proprietary/vendor/etc/security/idd_config.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_config.pem \
-    vendor/sony/pdx257/proprietary/vendor/etc/security/idd_report.pem:$(TARGET_COPY_OUT_VENDOR)/etc/security/idd_report.pem \
     vendor/sony/pdx257/proprietary/vendor/etc/sensors/config/parrot_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/parrot_ak991x_0.json \
     vendor/sony/pdx257/proprietary/vendor/etc/sensors/config/parrot_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/parrot_bu52053nvx_0.json \
     vendor/sony/pdx257/proprietary/vendor/etc/sensors/config/parrot_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/parrot_default_sensors.json \
@@ -1219,13 +1218,13 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libSurfaceUtil_jni \
     libdiag_system \
     libdiagatbparser_system \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libimscamera_jni \
     libimsmedia_jni \
     libmmosal \
     libmmparser_lite \
@@ -1281,7 +1280,7 @@ PRODUCT_PACKAGES += \
     EuiccMemoryReset \
     ImsDataChannelService \
     QCC \
-    QtiTelephonyService \
+    QtiTelephony \
     WfdService \
     dpmserviceapp \
     ims \
@@ -1476,7 +1475,7 @@ PRODUCT_PACKAGES += \
     taimport_vendor
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libSurfaceUtil_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_etc_hal_uuid_map_c000850_xml \

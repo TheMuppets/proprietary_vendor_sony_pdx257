@@ -50,9 +50,6 @@ sched_rt_runtime_ms=`expr $long_running_rt_task_ms + 50`
 sched_rt_runtime_us=`expr $sched_rt_runtime_ms \* 1000`
 sched_rt_period_ms=`expr $sched_rt_runtime_ms + 100`
 sched_rt_period_us=`expr $sched_rt_period_ms \* 1000`
-if [ -d /sys/module/sched_walt_debug ]; then
-   echo $long_running_rt_task_ms > /proc/sys/walt/sched_long_running_rt_task_ms
-fi
 echo $sched_rt_period_us > /proc/sys/kernel/sched_rt_period_us
 echo $sched_rt_runtime_us > /proc/sys/kernel/sched_rt_runtime_us
 

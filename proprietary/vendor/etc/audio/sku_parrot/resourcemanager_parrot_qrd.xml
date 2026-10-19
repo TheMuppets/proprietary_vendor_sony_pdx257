@@ -590,7 +590,10 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_LOW_LATENCY</name>
-                <priority>1</priority>
+                <custom-config key="sony-speaker-mono-2">
+                   <channels>2</channels>
+                   <snd_device_name>speaker-mono-2</snd_device_name>
+                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_PCM_OFFLOAD</name>

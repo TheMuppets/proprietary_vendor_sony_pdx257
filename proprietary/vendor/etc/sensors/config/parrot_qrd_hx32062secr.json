@@ -168,14 +168,14 @@
       "owner": "sns_hx32062secr",
       ".fac_cal":{
         "owner": "sns_hx32062secr",
-        "ct_threshold":{ "type": "flt", "ver": "0",
-          "data": "1000.0"
+        "ct_threshold":{ "type": "flt", "ver": "1",
+          "data": "1141.0"
         },
-        "near_threshold":{ "type": "flt", "ver": "0",
-          "data": "25000.0"
+        "near_threshold":{ "type": "flt", "ver": "1",
+          "data": "2431.0"
         },
-        "far_threshold":{ "type": "flt", "ver": "0",
-          "data": "10000.0"
+        "far_threshold":{ "type": "flt", "ver": "1",
+          "data": "1629.0"
         }
       },
       ".proxOffset_hWcal":{
