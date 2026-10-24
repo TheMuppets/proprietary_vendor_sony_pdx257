@@ -7,6 +7,7 @@ soong_namespace {
         "device/sony/pdx257",
         "hardware/qcom-caf/sm8450-6.6",
         "hardware/qcom-caf/wlan",
+        "hardware/sony",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/dataservices",
@@ -24456,6 +24457,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.semc.hardware.aidldisplay-somc.xml",
+    owner: "sony",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.semc.hardware.aidldisplay-somc.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.somc.hardware.aidlmiscta-somc.xml",
     owner: "sony",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.somc.hardware.aidlmiscta-somc.xml",
@@ -25356,6 +25366,39 @@ cc_prebuilt_binary {
                 "libavservices_minijail",
                 "libbinder",
                 "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.semc.hardware.aidldisplay-service.somc",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.semc.hardware.aidldisplay-service.somc",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libhwbinder",
+                "libbinder_ndk",
+                "vendor.semc.hardware.aidldisplay-V2-ndk",
+                "libexpat",
                 "libc++",
                 "libc",
                 "libm",

@@ -197,6 +197,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.qti.syshealthmon-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.syshealthmon-service.rc \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.semc.hardware.aidldisplay-somc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.aidldisplay-somc.rc \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.semc.hardware.aidlsecd-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.aidlsecd-service.rc \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.semc.hardware.spc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.spc-service.rc \
     vendor/sony/pdx257/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -1372,6 +1373,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
+    vendor.semc.hardware.aidldisplay-somc.xml \
     vendor.somc.hardware.aidlmiscta-somc.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     adpl \
@@ -1400,6 +1402,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
+    vendor.semc.hardware.aidldisplay-service.somc \
     vendor.semc.hardware.aidlsecd-service \
     vendor.semc.hardware.spc-service \
     vendor.somc.hardware.aidlmiscta-service.somc \
